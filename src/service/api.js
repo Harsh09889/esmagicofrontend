@@ -1,9 +1,9 @@
 import axios from "axios";
-import { SERVICE_URLS } from "../constants/config.js";
+import { BASE_URL, SERVICE_URLS } from "../constants/config.js";
 import jwtDecode from "jwt-decode";
 import { differenceInMilliseconds, getUnixTime } from "date-fns";
 
-const API_URL = "http://localhost:8080/api";
+const API_URL = BASE_URL;
 const API = {};
 
 export const axiosInstance = axios.create({
