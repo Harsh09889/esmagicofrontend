@@ -2,18 +2,15 @@ import { Fragment, useState } from "react";
 import {
 	Button,
 	Dialog,
-	DialogHeader,
 	DialogBody,
 	DialogFooter,
 	Typography,
-	CardFooter,
-	Checkbox,
 	Input,
 	CardBody,
 	CardHeader,
 	Card,
 } from "@material-tailwind/react";
-import { API, axiosInstance } from "../service/api";
+import { axiosInstance } from "../service/api";
 import { useDispatch } from "react-redux";
 import { getLoggedInUserFunction } from "../service/auth";
 
@@ -29,6 +26,7 @@ export default function Example({ open, setOpen, id }) {
 	const dispatch = useDispatch();
 
 	const handleUpdate = async () => {
+		// eslint-disable-next-line
 		const { data: p } = await axiosInstance.put(`/users/${id}`, {
 			...profile,
 		});

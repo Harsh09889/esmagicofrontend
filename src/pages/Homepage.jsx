@@ -7,18 +7,8 @@ import {
 	CardFooter,
 	Typography,
 	Button,
-	Tooltip,
-	IconButton,
 } from "@material-tailwind/react";
-import {
-	BanknotesIcon,
-	StarIcon,
-	HeartIcon,
-	WifiIcon,
-	HomeIcon,
-	TvIcon,
-	FireIcon,
-} from "@heroicons/react/24/solid";
+
 import { Link } from "react-router-dom";
 
 function Homepage() {

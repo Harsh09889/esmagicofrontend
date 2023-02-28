@@ -7,7 +7,6 @@ import {
 	IconButton,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
-import { API } from "../service/api";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/loginSlice";
 

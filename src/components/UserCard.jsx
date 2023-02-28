@@ -2,10 +2,7 @@ import {
 	Card,
 	CardHeader,
 	CardBody,
-	CardFooter,
 	Typography,
-	Tooltip,
-	Button,
 	Radio,
 } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
@@ -23,12 +20,14 @@ export default function UserCard({ user, isAdmin, setUsers }) {
 
 	useEffect(() => {
 		(async () => {
+			// eslint-disable-next-line
 			const { data: p } = await axiosInstance.put(`/users/${user._id}`, {
 				role,
 			});
 			const { data } = await API.getAllUsers();
 			setUsers(data);
 		})();
+		// eslint-disable-next-line
 	}, [role]);
 
 	return (

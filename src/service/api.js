@@ -1,5 +1,5 @@
 import axios from "axios";
-import { BASE_URL, SERVICE_URLS } from "../constants/config.js";
+import { SERVICE_URLS } from "../constants/config.js";
 import jwtDecode from "jwt-decode";
 import { differenceInMilliseconds, getUnixTime } from "date-fns";
 

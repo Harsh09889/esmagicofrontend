@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import { userSignup } from "../../service/auth";
@@ -27,6 +27,7 @@ function AdminSignup() {
 			dispatch(registerReset());
 			navigate("/auth/admin");
 		}
+		// eslint-disable-next-line
 	}, [registerLoading, registerSuccess]);
 
 	const handleChange = (e) => {

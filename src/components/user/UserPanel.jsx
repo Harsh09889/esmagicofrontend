@@ -2,10 +2,7 @@ import {
 	Card,
 	CardHeader,
 	CardBody,
-	CardFooter,
 	Typography,
-	Tooltip,
-	Button,
 } from "@material-tailwind/react";
 import { useState } from "react";
 import { useSelector } from "react-redux";

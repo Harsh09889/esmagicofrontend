@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
-import { loginAdmin, loginUser } from "../../service/auth";
+import { loginAdmin } from "../../service/auth";
 import { useDispatch } from "react-redux";
 
 function AdminLogin() {

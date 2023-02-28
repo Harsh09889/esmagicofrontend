@@ -23,7 +23,7 @@ function IfLoggedOut() {
 }
 
 function MainRoute() {
-	const user = useSelector((state) => state.login.currentLoggedInUser);
+	// const user = useSelector((state) => state.login.currentLoggedInUser);
 
 	useEffect(() => {}, []);
 

@@ -29,6 +29,7 @@ function AdminPanel() {
 				setSearchedUsers([]);
 			}
 		}, 1000);
+		// eslint-disable-next-line
 	}, [search]);
 
 	return (
